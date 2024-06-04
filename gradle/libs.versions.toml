@@ -1,5 +1,7 @@
 [versions]
 agp = "8.4.0"
+circleimageview = "3.1.0"
+circleimageviewVersion = "3.1.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -13,6 +15,8 @@ drawerlayout = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+circleimageview = { module = "de.hdobenhof:circleimageview", version.ref = "circleimageview" }
+hdodenhof-circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageviewVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

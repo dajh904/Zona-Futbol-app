@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Proyecto_final</string>
-    <String name="titulo">Zona Futbol</String>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
