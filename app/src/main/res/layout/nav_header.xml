@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="20dp"
-    android:paddingStart="20dp"
+    android:paddingTop="50dp"
+    android:paddingStart="30dp"
     android:background="#CDE8EB"
     >
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@mipmap/profile_pic"/>
-    <TextView
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hola"
-        android:paddingTop="20dp"
-        android:text="Bienvenido"
-        android:textColor="#9E9E9E"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_name"
-        android:text="Diego Jaimes"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/profile_pic"/>
+
+        <TextView
+            android:id="@+id/hola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:layout_marginTop="15dp"
+            android:textColor="#9E9E9E"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Diego Jaimes"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

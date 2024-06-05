@@ -174,7 +174,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_back"
         android:layout_width="64dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"

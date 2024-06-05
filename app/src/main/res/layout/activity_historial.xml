@@ -2,10 +2,10 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_home"
+    android:id="@+id/activity_historial"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
+    tools:context=".HistorialActivity"
     tools:openDrawer="start"
     >
 
@@ -33,20 +33,13 @@
             android:layout_height="match_parent"
             android:layout_marginTop="75dp">
 
-            <TextView
-                android:id="@+id/tv_caja"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#3F51B5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <!-- Cancha 1 -->
 
             <TextView
-                android:id="@+id/tv_caja2"
+                android:id="@+id/tv_cancha1"
                 android:layout_width="380dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="44dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="48dp"
                 android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.483"
@@ -54,93 +47,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_titulo"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="64dp"
-                android:background="@color/white"
-                android:text="--- Reservar ---"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="124dp"
-                android:background="@color/white"
-                android:text="Fecha:"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.167"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/et_fecha"
-                android:layout_width="236dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="116dp"
-                android:background="#B3B2B2"
-                android:drawableEnd="@drawable/baseline_calendar_month_24"
-                android:hint="Ingresa el día que deseas reservar"
-                android:inputType="date"
-                android:paddingHorizontal="10dp"
-                android:text="04/06/2024"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.689"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
-
-            <Button
-                android:id="@+id/btn_fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="176dp"
-                android:backgroundTint="#3F51B5"
-                android:paddingHorizontal="10dp"
-                android:text="Buscar"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <!-- Cancha 1 -->
-            <TextView
-                android:id="@+id/tv_cancha1"
-                android:layout_width="380dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="288dp"
-                android:background="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.516"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:layout_width="102dp"
-                android:layout_height="100dp"
-                android:src="@drawable/cancha1"
-                app:layout_constraintStart_toStartOf="@+id/tv_cancha1"
-                app:layout_constraintTop_toTopOf="@+id/tv_cancha1" />
-
-            <TextView
                 android:id="@+id/tv_titulo1"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="292dp"
-                android:text="Cancha 1"
+                android:layout_marginTop="48dp"
+                android:text="Soccer People"
                 android:textAlignment="center"
                 android:textColor="#3F51B5"
                 android:textSize="18sp"
@@ -153,56 +64,93 @@
             <TextView
                 android:id="@+id/tv_info1"
                 android:layout_width="276dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="312dp"
-                android:text="Soccer People\nJardin Plaza\nValor por hora: 60000"
-                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:text="Jardin Plaza"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.903"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info1_1"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:text="Activa | 07/06/2024"
+                android:textColor="#97C395"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info1_2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="112dp"
+                android:text="18:00 - 19:00   VALOR: 60000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btn_reserva1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="320dp"
-                android:backgroundTint="#4ABF46"
-                android:paddingHorizontal="10dp"
-                android:text="Reservar"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:id="@+id/tv_info1_3"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="128dp"
+                android:backgroundTint="#F42B2B"
+                android:drawableEnd="@drawable/baseline_cancel_24"
+                android:text="Cancelar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.949"
+                app:layout_constraintHorizontal_bias="0.747"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btn_tipo1"
                 android:layout_width="58dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="348dp"
+                android:layout_marginTop="132dp"
                 android:backgroundTint="#FFC107"
                 android:paddingHorizontal="10dp"
                 android:text="Fut-5"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintHorizontal_bias="0.113"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <!-- Cancha 2 -->
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/cancha1"
+                app:layout_constraintStart_toStartOf="@+id/tv_cancha1"
+                app:layout_constraintTop_toTopOf="@+id/tv_cancha1" />
 
+            <!-- Cancha 2 -->
             <TextView
                 android:id="@+id/tv_cancha2"
                 android:layout_width="380dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="400dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="184dp"
                 android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintHorizontal_bias="0.483"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -210,8 +158,8 @@
                 android:id="@+id/tv_titulo2"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="404dp"
-                android:text="Cancha 2"
+                android:layout_marginTop="188dp"
+                android:text="Soccer People"
                 android:textAlignment="center"
                 android:textColor="#3F51B5"
                 android:textSize="18sp"
@@ -224,35 +172,37 @@
             <TextView
                 android:id="@+id/tv_info2"
                 android:layout_width="276dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="424dp"
-                android:text="Soccer People\nJardin Plaza\nValor por hora: 90000"
-                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="212dp"
+                android:text="Jardin Plaza"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.903"
+                app:layout_constraintHorizontal_bias="0.948"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:layout_width="102dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/cancha2"
-                app:layout_constraintStart_toStartOf="@+id/tv_cancha2"
-                app:layout_constraintTop_toTopOf="@+id/tv_cancha2" />
-
-            <Button
-                android:id="@+id/btn_reserva2"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/tv_info2_1"
+                android:layout_width="276dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="432dp"
-                android:backgroundTint="#4ABF46"
-                android:paddingHorizontal="10dp"
-                android:text="Reservar"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:layout_marginTop="228dp"
+                android:text="Cancelada | 30/05/2024"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.949"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info2_2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="248dp"
+                android:text="18:00 - 19:00"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -260,25 +210,34 @@
                 android:id="@+id/btn_tipo2"
                 android:layout_width="58dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="464dp"
+                android:layout_marginTop="268dp"
                 android:backgroundTint="#FFC107"
                 android:paddingHorizontal="10dp"
                 android:text="Fut-9"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintHorizontal_bias="0.113"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <!-- Cancha 3 -->
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/cancha2"
+                app:layout_constraintStart_toStartOf="@+id/tv_cancha2"
+                app:layout_constraintTop_toTopOf="@+id/tv_cancha2" />
 
+
+            <!-- Cancha 3 -->
             <TextView
                 android:id="@+id/tv_cancha3"
                 android:layout_width="380dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="508dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="320dp"
                 android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.516"
@@ -289,67 +248,79 @@
                 android:id="@+id/tv_titulo3"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="512dp"
-                android:text="Cancha 3"
+                android:layout_marginTop="324dp"
+                android:text="Club Deportivo Qatar"
                 android:textAlignment="center"
                 android:textColor="#3F51B5"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintHorizontal_bias="0.877"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info3_2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="392dp"
+                android:text="20:00 - 21:00   VALOR: 150000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.925"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_info3_1"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="368dp"
+                android:text="Reservada | 21/04/2024"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.925"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_info3"
                 android:layout_width="276dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="532dp"
-                android:text="Club Deportivo Qatar\nCalle 49 #8-114 Los Patios\nValor por hora: 150000"
-                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="348dp"
+                android:text="Calle 49 #8-114 Los Patios"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.903"
+                app:layout_constraintHorizontal_bias="0.925"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:layout_width="102dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/cancha3"
                 app:layout_constraintStart_toStartOf="@+id/tv_cancha3"
                 app:layout_constraintTop_toTopOf="@+id/tv_cancha3" />
 
             <Button
-                android:id="@+id/btn_reserva3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="540dp"
-                android:backgroundTint="#4ABF46"
-                android:paddingHorizontal="10dp"
-                android:text="Reservar"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.949"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
                 android:id="@+id/btn_tipo3"
                 android:layout_width="58dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="572dp"
+                android:layout_marginTop="404dp"
                 android:backgroundTint="#FFC107"
                 android:paddingHorizontal="10dp"
                 android:text="Fut-11"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintHorizontal_bias="0.113"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -362,5 +333,4 @@
         app:menu="@menu/nav_menu"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
-
 </androidx.drawerlayout.widget.DrawerLayout>
